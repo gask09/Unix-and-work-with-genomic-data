@@ -3,18 +3,10 @@ This repository contains a final excercise for a *Unix and work with genomic dat
 
 ## Shell script
 For this no additional software is required. Only thing needed is terminal. 
-### (Optional) Prepare a data directory
 
-``` bash
-cd ~/Desktop
-mkdir NameOfFile
+As code is written in such way that it requires all the data to be located in single file, all required scripts and the data file (luscinia_vars.vcf) should be downloaded (or moved) into single file.
 
-```
-### Shell script
-As code is written in such way that it requires all the data to be located in single file, all required scripts and the data file (luscinia_vars.vcf) should be moved to single file.
-Every moment from now, we will be working in this file
-
-### Running Bash Script
+### Running Shell Script
 To make shell script executable script, one needs to add **x** permission via:
 ```bash
 chmod +x ShellScript.sh
@@ -24,16 +16,7 @@ To run the script, type:
 ./ShellScript.sh
 ```
 Or simply double click the icon.
-Output of this script is **vystup.csv**, which is .csv file.
-
-## R Script
-No additional package is required, all packages should be already installed along with RStudio. 
-To run script, just double click it and run in RStudio by pressing **CTRL+A** followed by hitting **CTRL+ENTER**, plot is saved to file, where the script is located. 
-Alternatively from terminal, type: 
-```bash
-Rscript /PathToFile/RPlotScript.r
-```
-When run from terminal, the plot is saved to a current directory (type **cd** to show).
+One of outputs of this script is **vystup.csv**, which is .csv file. This file is then indirectly fed to R script, which then returns a plot. 
 
 ### The Plot
 ![plot](https://user-images.githubusercontent.com/87470058/148593796-02e6115c-f345-497b-95af-d899283b71f2.png)
