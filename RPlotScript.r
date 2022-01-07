@@ -44,7 +44,7 @@ df = tibble(dataNames, Types, data, LabelHeight)
 #Finally, a plot
 ggplot(data=df, aes(x=dataNames, y=data, fill=Types)) +
   geom_bar(stat="identity") + 
-  labs(x = element_blank(), y = "Ratio of each type of SNP") +
+  labs(x = element_blank(), y = "Relative frequency of SNPs") +
   geom_text(aes(y=LabelHeight, label=data), vjust=1.6, color="white", size=3.5)
 
 ggsave("plot.png")

@@ -24,8 +24,8 @@ awk '{
 		print($0)	
 	}
 
-}' ##Creates two new columns and saves type of nucleotide (Pyridine x Purine)  
-| awk '{
+}' | ##Creates two new columns and saves type of nucleotide (Pyridine x Purine)
+awk '{
 	if ($3 ~ /[AG]/) {
 		print ($0 "\t" "Pur")
 		}
@@ -42,8 +42,10 @@ awk '{
 	else if ($4 ~ /[CT]/){
 		print ($0 "\t" "Pyr")
 		}
-}' 
-##Replaces all tabs with commas and saves all the data to vystup.csv file
-| tr "\t" "," > vystup.csv
+}' | ##Replaces all tabs with commas and saves all the data to vystup.csv file
 
-echo "Done, output saved to vystup.csv"
+tr "\t" "," > vystup.csv
+
+Rscript RPlotScript.r
+
+echo "Done, plot is saved to $PWD"
