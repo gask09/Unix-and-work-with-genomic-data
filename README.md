@@ -22,4 +22,4 @@ One of outputs of this script is **vystup.csv**, which is .csv file. This file i
 ### Output: Plot
 ![plot](https://user-images.githubusercontent.com/87470058/148593796-02e6115c-f345-497b-95af-d899283b71f2.png)
 
-The plot is fairly simple, it contains three bars, each made of two boxes. Decimal number inside of blue box denotes relative frequency (i.e. number of transitions OR transversion divided by sum of transitions AND transversions) of transition/transversion, in total and by type of nucleotide - purine and pyridine. 
+The plot is fairly simple, it contains three bars, each made of two boxes. Decimal number inside of blue or red box denotes relative frequency (i.e. number of transitions OR transversion divided by sum of transitions AND transversions) of transition/transversion, in total and by type of nucleotide - purine and pyridine. 
